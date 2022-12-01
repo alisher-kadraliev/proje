@@ -1,0 +1,70 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.img-bg{
+    background-image: url(../img/hero.webp);
+        position: relative;
+    width: 100%;
+    height: 690px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.img-bg::before {
+    background-color: rgba(0, 0, 0, 0.37);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.logo-img{
+width: 300px;
+
+}
+.navbar-bot{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-collapse  {
+        justify-content: flex-end;
+}
+.nav-top-inner{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-top{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.z-index{
+    z-index: 11111!important;
+}
+.social-list{
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+}
+.social-item{
+    box-shadow: inset 0 0 0 2px var(--color-content-border);
+    border-radius: 50%;
+        line-height: 2em;
+        display: block;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    line-height: 2.5em;
+    border: none!important;
+    border-radius: inherit;
+    z-index: 0;
+    width: 2em;
+}
+:root{
+        --color-content-border: #ebebeb;
+}
